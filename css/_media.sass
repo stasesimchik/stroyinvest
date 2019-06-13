@@ -4,12 +4,20 @@
     &__item
      margin: 0px 10px
 @media (max-width:800px)
+  .info-direction__title
+    text-align: center
+  .info-description
+    text-align: center
+    &__text
+     text-align: left
   .navbar
     flex-direction: column
     &-list
      justify-content: space-around
   main
     flex-direction: column
+  .category
+    display: block  
   .section
     &-left,&-right
      max-width: 100%
@@ -26,10 +34,16 @@
       width: 100%
       &__list
         text-align: center
+        display: none
   .footer-block
     &__menu,&__category
-      display: none      
+      display: none
 @media (max-width:670px)
+ .offer
+   display: none
+ .blocks-item
+  img
+   width: 50%
  .navbar
    flex-direction: row
    justify-content: space-around
@@ -53,3 +67,12 @@
          background-color: darken($active, 10%)
      &__link
         color: $white
+@media (max-width:576px)
+  .footer
+    flex-direction: column
+    align-items: center
+    margin: 0
+    &-block
+      text-align: center
+  .card-menu__item
+    padding: 15px 0

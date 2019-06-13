@@ -26,12 +26,14 @@
      flex-direction: column
      justify-content: space-between
      background-color: $white
-     max-height: 220px
+     height: 220px
      max-width: 25%
      margin-right: 10px
+     overflow: hidden
      img
-        max-width: 100%
+        width: 100%
         max-height: 140px
+        margin: auto
      &__title
         display: block
         font-size: 14px
@@ -40,8 +42,18 @@
         text-align: center
 .info-direction
    margin-top: 85px
-
+   padding: 0px 20px
 .active
    color: $active
    text-transform: uppercase
    font-weight: 700
+.slick-dots li button
+  background-color: gray !important
+  border-radius: 50%
+  width: 10px !important
+  height: 10px !important
+.slick-dots li.slick-active button:before
+ background-color: $active
+ width: 10px
+ height: 10px
+ border-radius: 50%

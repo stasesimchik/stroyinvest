@@ -7,8 +7,9 @@
   &__list
     list-style: none
     padding: 20px 0px
+    text-align: center
   &__item
-    padding: 15px 0px 15px 30px
+    padding: 15px 0px 15px 0px
     &:hover
       background-color: $active
       cursor: pointer
@@ -33,3 +34,25 @@
     margin-bottom: 26px
   &__link
     color: $active
+.category
+  display: none
+  text-align: center
+  padding: 20px 0
+  position: relative
+  width: 100%
+  background-color: $white
+  border: none
+  color: $text
+  &:focus
+    outline: none
+    background-color: $active
+    color: $white
+  &__item
+    font-size: 16px
+    font-weight: 700
+    &::after
+     content: "<"
+     font-size: 20px
+     position: absolute
+     right: 20px
+     transform: rotate(-90deg)
